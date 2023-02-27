@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+    
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(126, 191, 244);
+    color: white;
+    
+}
+.options{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10rem;
+    height: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: .1rem solid rgb(1, 9, 52);
+    box-shadow: 1px 1px 0 black;
+    font-weight: bold;
+   
+}
+.options > *{
+    flex: 1;
+}
+.option{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-left: .05rem solid black;
+    background-color: rgb(53, 156, 253);
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+.option:hover{
+    background-color: rgb(3, 45, 84);
+}
+.option:focus{
+    background-color: rgb(3, 45, 84);
+}
+form[name="minuteInput"]{
+   
+ 
+}
+input[name="minutes"]{
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: cursive;
+    border: none;
+    
+}
+input[name="minutes"]:focus{
+    border: .05rem solid black;border-radius: 0.5rem;
+}
+.clock{
+    justify-self: center;
+    font-size: 5rem;
+}
+.end-time{
+    font-size: 3rem;
+}
