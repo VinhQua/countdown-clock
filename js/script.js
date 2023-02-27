@@ -16,6 +16,7 @@ const displayTimer = function(secondLeft){
     const minutes =Math.floor((secondLeft % 3600)/60) ;
     const seconds =secondLeft % 60;
     clock.textContent = `${hours<10?0:''}${hours}:${minutes<10?0:''}${minutes}:${seconds<10?0:''}${seconds}`;
+    document.title = `${hours<10?0:''}${hours}:${minutes<10?0:''}${minutes}:${seconds<10?0:''}${seconds}`;
 };
 const timer = function(seconds){
     displayTimer(seconds);
@@ -29,6 +30,7 @@ const timer = function(seconds){
         if (secondLeft <= 0){
             clearInterval(countDown);
             endTime.textContent = `Time's Up! Man!!!`
+            document.title = `Time's Up! Man!!!`
             endTime.style.color = 'red';
             audio.currentTime = 0;
             audio.play();
