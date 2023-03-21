@@ -15,6 +15,8 @@ body{
     flex-flow: column wrap;
     background-color: rgb(126, 191, 244);
     color: white;
+    width: 98vw;
+    margin: 0 auto;
     
 }
 .options{
@@ -28,7 +30,7 @@ body{
     border-bottom: .1rem solid rgb(1, 9, 52);
     box-shadow: 1px 1px 0 black;
     font-weight: bold;
-   
+   flex-flow: row wrap;
 }
 .options > *{
     flex: 1;
@@ -52,13 +54,13 @@ body{
     background-color: rgb(3, 45, 84);
 }
 form[name="minuteInput"]{
-   
+
  
 }
 input[name="minutes"]{
     height: 100%;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: cursive;
     border: none;
@@ -73,4 +75,18 @@ input[name="minutes"]:focus{
 }
 .end-time{
     font-size: 3rem;
+}
+@media (max-width:1200px) {
+    html{
+        font-size: 10px;
+    }
+    form[name="minuteInput"]{
+
+        flex-basis: 100%;
+    }
+}
+@media (max-width:768px) {
+    html{
+        font-size: 8px;
+    }
 }
